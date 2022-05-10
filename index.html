@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Caats - Menu de mon chat</title>
+    <meta name="description" content="Menu personnel lié à mon chat et ses informations" />
+
+</head>
+<body>
+    
+    <section>
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-lg-3 col-md-5 h-75 mt-md-4 text-center border border-secondary rounded mypetinfo">
+                    <h2 class="pt-3 font-weight-bold">MY PET</h2>
+                    <img class="w-75 rounded-circle" src="C:\Users\stefa\OneDrive\Noah\.Formation\Code\Exercice_Semaine1\2.Caats_HTML+CSS\img\cat.png" />
+                    <p class="pt-4 font-weight-bold">Vous souhaitez :</p>
+                    <ul class="list-unstyled my-4 pt-2">
+                        <li class="menu-item"><a class="d-block" href="">Changer la photo de Profil</a></li>
+                        <li class="menu-item"><a class="d-block" href="">Modifier sa date d'expedition</a></li>
+                        <li class="menu-item"><a class="d-block" href="">Modifier son menu</a></li>
+                        <li class="menu-item"><a class="d-block" href="">Modifier son profil</a></li>
+                        <li class="menu-item"><a class="d-block" href="">Suspendre les livraisons</a></li>
+                        <li class="menu-item"><a class="d-block" href="">Contacter le service client</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-9 col-md-7 pl-md-5">
+                    <div>
+                        <h2 class="pt-2 font-weight-bold">Prochaine expédition</h2>
+                        <div class="row justify-content-around my-3"> 
+                            <div class="col-lg-4 text-center">
+                                <img class="w-100" src="C:\Users\stefa\OneDrive\Noah\.Formation\Code\Exercice_Semaine1\2.Caats_HTML+CSS\img\box.png"/>
+                            </div>
+                            <article class="col-lg-7">
+                            <div>
+                                <h3>2 mois d'alimentation pour {FNAME}</h3>
+                                <div class="info my-3">
+                                    <p>- 7.2kg de croquettes saines et naturelles</p>
+                                    <p>- 40 pochons d'effilochés</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Prix total pour 2 mois : 82,40€ (1,37€ : jour)</h3>
+                                <div class="info my-3 small">
+                                    <p>Date de facturation et préparation : 15/11/2021</p>
+                                    <P>Livraison estimée 16/11/2021 ++ 199/11/2021</P>
+                                </div>  
+                            </div>
+                            <a class="salmon" href="">Modifier sa date d'expédition</a>
+                        </article>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <h2 class="pt-2 font-weight-bold">Le menu de {FNAME}</h2>
+                        <div class="row justify-content-around my-3"> 
+                            <div class="col-lg-4 text-center">
+                                <img class="w-100" src="C:\Users\stefa\OneDrive\Noah\.Formation\Code\Exercice_Semaine1\2.Caats_HTML+CSS\img\food.png"/>
+                            </div>
+                            <article class="col-lg-7">
+                                <div class="info mt-5">
+                                    <p>Croquettes (poulets et petits légumes)...<span class="font-weight-bold">35g /jour</span></h3>
+                                    <p>Effilochés (plusieurs saveurs)...<span class="font-weight-bold">1 pochon /jour</span></p>
+                                    <p>Prix total par jour...<span class="font-weight-bold">1,37 /jour</span></p>
+                                </div>
+                                <h3 class="mt-4">Fréquence de livraison tous les 2 mois</h3>
+                                <a class="salmon" href="">Modifier le menu</a>
+                            </article>
+                            </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <h2 class="py-2 font-weight-bold">Le profil {FNAME}</h2>
+                        <form class="row">
+                            <div class="col-md-6">
+                                <label for="name" class="font-weight-bold">Nom : </label>
+                                <input type="text" class="border-0" id="name" name="pet_name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="birthdate" class="font-weight-bold">Date de naissance : </label>
+                                <input type="text" class="border-0" id="date" name="birth_date">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="sexe" class="font-weight-bold">Sexe : </label>
+                                <input type="text" class="border-0" id="sexe" name="gender">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="race" class="font-weight-bold">Race : </label>
+                                <input type="text" class="border-0" id="race" name="pet_race">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="sterilization" class="font-weight-bold">Stérilisation : </label>
+                                <input type="text" class="border-0" id="sterilization" name="pet_sterilization">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="weight" class="font-weight-bold">Poids : </label>
+                                <input type="text" class="border-0" id="weight" name="pet_weight">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="activity" class="font-weight-bold">Activité : </label>
+                                <input type="text" class="border-0" id="activity" name="pet_activity">
+                            </div>
+                            <div class="col-md-6" >
+                                <label for="food_preference" class="font-weight-bold">Préférence alimentaire : </label>
+                                <input type="text" class="border-0" id="food_preference" name="pet_preference">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="allergy" class="font-weight-bold">Allergies : </label>
+                                <input type="text" class="border-0" id="allergy" name="pet_allergy">
+                            </div>
+                            <div class="col-12">
+                                <label for="health" class="font-weight-bold">Santé : </label>
+                                <input type="text" class="border-0" id="health" name="pet_health">
+                            </div>
+                        </form>
+                        <a class="salmon" href="">Modifier son profil</a>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
